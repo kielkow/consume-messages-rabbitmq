@@ -1,6 +1,6 @@
-const sleep = require('../functions/sleep');
-const sendToPebmedApi = require('../services/send-to-pebmed-api');
-const instantiveRabbiMq = require('../functions/instantiveRabbiMq');
+const sleep = require('./sleep');
+const sendToApi = require('./sendToApi');
+const instantiveRabbiMq = require('./instantiveRabbiMq');
 
 class Automation {
   async run(ctx) {
