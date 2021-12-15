@@ -9,7 +9,7 @@ class Automation {
 
       const numberOfMessages = await rabbitMq.getMessageCount(ctx.credentials);
 
-      rabbitMq.channel.consume(
+      await rabbitMq.channel.consume(
         ctx.credentials.queueName,
         async (msg) => {
           if (msg !== null) {
